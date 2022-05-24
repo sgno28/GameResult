@@ -2,14 +2,14 @@
 
 This code simplifies process of formatting the game result data in the case where passport nfts show as null
 
-#Constraints
+# Constraints
  only works so far for csv's already put in rank order
  Only formatts for wolfgame and mfers 
 
-#Returns
+# Returns
  Gives you a formatted database which default save name is formatted, you can change this (recommended)
  Prints out the ascii table for you so that you can just copy and paste and use in the webhook website: 
-https://discohook.org/?data=eyJtZXNzYWdlcyI6W3siZGF0YSI6eyJjb250ZW50IjpudWxsLCJlbWJlZHMiOm51bGwsImF0dGFjaG1lbnRzIjpbXX19XX0
+ https://discohook.org/?data=eyJtZXNzYWdlcyI6W3siZGF0YSI6eyJjb250ZW50IjpudWxsLCJlbWJlZHMiOm51bGwsImF0dGFjaG1lbnRzIjpbXX19XX0
 
 
 
