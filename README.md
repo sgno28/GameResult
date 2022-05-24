@@ -2,6 +2,12 @@
 
 This code simplifies process of formatting the game result data in the case where passport nfts show as null
 
+# Pre requisistes
+ You need to have the pandas module and prettytable modules and python installed first. 
+ You can do this in the cmd using pip:
+ copy and paste into cmd: python -m pip install -U prettytable
+ copy and paste into cmd: python -m pip install -U pandas
+
 # Constraints
  only works so far for csv's already put in rank order
  Only formatts for wolfgame and mfers 
