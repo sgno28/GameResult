@@ -20,14 +20,15 @@ def getWinners(df, n):
 def changeName(df, i):
     #0xf954 = MFER
     #0x555d = WG
-    nft = df.at[i, "NFT"]
-    nft_type = nft[0:6]
+    nft = df.at[i, "NFT"] 
+    nft_type = nft[0:6] #gets the contract handle at start
     nft_name = ""
-    end = len(nft) - 1
-    while nft[end] != "/":
+    end = len(nft) - 1 
+
+    while nft[end] != "/": 
         nft_name += nft[end]
         end-=1
-    nft_name = nft_name[::-1]
+    nft_name = nft_name[::-1] #gets nft name at the end of contract 
    
     if nft_type == "0xf954":
         nft_type = "MFER "
@@ -45,10 +46,10 @@ def formatting(df):
     df.rename(columns={"Game": "Rank"}, inplace = True) #renames Games column to rank
     
     for i in range(len(df)):
-        df.at[i, "Rank"] = i+1
+        df.at[i, "Rank"] = i+1 #actually assigns the ranks
 
-        if str(df.at[i, "NFT Name"]) == "nan":
-            df.at[i, "NFT Name"] = changeName(df, i)
+        if str(df.at[i, "NFT Name"]) == "nan": #foreign names
+            df.at[i, "NFT Name"] = changeName(df, i) #format the names
             df.at[i, "Tier"] = "Passport"
     
 def main():
